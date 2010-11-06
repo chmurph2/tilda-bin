@@ -4,7 +4,7 @@
 # http://github.com/coderifous/dotfiles/blob/master/bin/git-stats.rb
 
 Authors = []
-Format = "%20s %13s %12s %12s %10s\n"
+Format = "%23s %13s %12s %12s %10s\n"
 printf(Format, *%w(Author files-changed insertions deletions net))
 
 open("| git shortlog -s -n").each do |line|
