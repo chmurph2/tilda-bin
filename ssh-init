@@ -118,6 +118,9 @@ rsync -abL -e "ssh ${rsync_ssh_args}" ~/.bashrc ${rsync_ssh_host}:~/
 echo 'Syncing ~/.bash_profile ...'
 rsync -abL -e "ssh ${rsync_ssh_args}" ~/.bash_profile ${rsync_ssh_host}:~/
 
+echo 'Syncing ~/.screenrc ...'
+rsync -abL -e "ssh ${rsync_ssh_args}" ~/.screenrc ${rsync_ssh_host}:~/
+
 echo 'Syncing ~/.bash_aliases ...'
 rsync -abL -e "ssh ${rsync_ssh_args}" ~/.bash_aliases ${rsync_ssh_host}:~/
 
